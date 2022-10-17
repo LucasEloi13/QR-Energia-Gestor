@@ -6,6 +6,8 @@
   box-sizing: border-box;
   font-family: "Poppins" , sans-serif;
 }
+
+
 .sidebar{
   position: fixed;
   left: 0;
@@ -16,6 +18,9 @@
   padding: 6px 14px;
   z-index: 99;
   transition: all 0.5s ease;
+}
+.sidebar ul{
+  padding-left: 0px;
 }
 .sidebar.open{
   width: 250px;
@@ -252,21 +257,40 @@
   background-color: white;
 }
 
-.clientes{
-  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.3);
+.team img{
+  width:50px;
+  height:50px;
 }
 
-.container_clientes img{
-  max-width: 100px;
-  max-width: 100px;
+.team {
+  background: var(--color--bg1);
 }
 
-
-.container_clientes{
+.team_container{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
 }
+
+.team_member{
+  background-color: #FFF;
+  padding: 2rem;
+  border: 1px solid transparent;
+}
+
+.team_member-info{
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.container img{
+  width:150px;
+  height:150px;
+}
+
+.container .card-body h5{
+  margin: 0 auto;
+ }
 
 
 
